@@ -1,0 +1,10 @@
+-c requirements.txt
+mypy
+black
+flake8
+flake8-isort
+isort
+pytest
+pytest-mock
+mock
+types-mock # `mock` types for mypy.

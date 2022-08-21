@@ -1,0 +1,25 @@
+version: "3.6"
+
+services:
+  project-python:
+  image: project-python:0.0.1
+  container_name: project-python
+  build:
+    context: ./docker/python/image
+    dockerfile: Dockerfile
+    args:
+      - PYTHON_VERSION=3.10.6
+      - PROJECT_DIR=/usr/src/app
+      - PROJECT_UID=${UID:-1000}
+      - PROJECT_GID=${GID:-1000}
+      - PROJECT_PASSWORD=ansible
+      - PROJECT_USERNAME=project_user
+      - PROJECT_GROUPNAME=project_user
+      - PROJECT_PASSWORD=project_user
+  networks:
+    - project-network
+
+networks:
+  project-network:
+    name: project-network
+    driver: bridge
