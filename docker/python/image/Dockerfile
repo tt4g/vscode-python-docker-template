@@ -15,8 +15,8 @@ ADD dev-requirements.in dev-requirements.txt requirements.in requirements.txt ${
 
 RUN python -m pip install --upgrade --no-cache-dir pip \
     # Install dependency management tool `pip-tools`.
-    python -m pip install --no-cache-dir pip-tools \
-    pip-sync --pip-args "--no-cache-dir" requirements.txt dev-requirements.txt
+    && python -m pip install --no-cache-dir pip-tools \
+    && pip-sync --pip-args "--no-cache-dir" requirements.txt dev-requirements.txt
 
 ARG PROJECT_UID=1000
 ARG PROJECT_GID=1000
