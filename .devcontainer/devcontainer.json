@@ -1,0 +1,16 @@
+{
+    "name": "Existing Docker Compose (Extend)",
+    "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
+    "service": "project-python",
+    "workspaceFolder": "/workspace",
+    "remoteUser": "project_user",
+    "extensions": [
+        "editorconfig.editorconfig",
+        "ryu1kn.partial-diff",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "littlefoxteam.vscode-python-test-adapter",
+        "bungcip.better-toml",
+        "trond-snekvik.simple-rst"
+    ]
+}

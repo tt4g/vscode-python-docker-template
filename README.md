@@ -57,3 +57,8 @@ $ pip-compile --upgrade-package <package>
 #### [docker-compose.yml](docker-compose.yml)
 
 Edit [docker-compose.yml](docker-compose.yml).
+
+#### Visual Studio Code Remote Development
+
+Edit [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json) and
+[.devcontainer/docker-compose.yml](.devcontainer/docker-compose.yml).

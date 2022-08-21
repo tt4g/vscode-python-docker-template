@@ -1,0 +1,6 @@
+version: '3.6'
+services:
+  project-python:
+    volumes:
+      - .:/workspace:cached
+    command: /bin/sh -c "while sleep 1000; do :; done"
