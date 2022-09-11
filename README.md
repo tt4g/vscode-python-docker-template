@@ -8,7 +8,7 @@ Since `module1` is tentatively specified for the module name, change the name as
 it appears in the next configuration file.
 
 - [pyproject.toml](pyproject.toml)
-- [flake8](flake8)
+- [.flake8](.flake8)
 
 ### Docker
 
