@@ -15,6 +15,8 @@ services:
         - PROJECT_USERNAME=project_user
         - PROJECT_GROUPNAME=project_user
         - PROJECT_PASSWORD=project_user
+    environment:
+      PYTHONDONTWRITEBYTECODE: "1"
     networks:
       - project-network
 
